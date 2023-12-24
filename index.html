@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    @font-face {
+      font-family: Figtree;
+      src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Figtree;
+      color:black;
+      background-color: hsl(47, 88%, 63%);
+    }
+
+    p {
+      font-size: 12px;
+    }
+  
+    .blog-card {
+      border: 1px solid;
+      background-color: white;
+      margin-top: auto;
+      margin-bottom: auto;
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: 5px 5px 0 black;
+      width: 50%;
+      max-width: 300px;
+
+    }
+
+    .thumbnail {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .category{
+      display: inline-block;
+      padding: 5px;
+      border-radius: 2px;
+      background-color: hsl(47, 88%, 63%);
+      font-weight: 800;
+    }
+
+    .title:hover{
+      color:hsl(47, 88%, 63%);
+      cursor: pointer;
+    }
+    
+    .summary {
+      color: hsl(0, 0%, 50%);
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+    }
+
+    .avatar {
+      width: 30px;
+      padding-right: 15px;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="blog-card">
+    <img src="assets/images/illustration-article.svg" class="thumbnail">
+
+    <p class="category">Learning</p>
+  
+    <p class="publish-date">Published 21 Dec 2023</p>
+  
+    <h2 class="title">HTML & CSS foundations</h2>
+  
+    <p class="summary">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <div class="author">
+      <img src="assets/images/image-avatar.webp" class="avatar">
+      <span >
+        Greg Hooper
+      </span>
+    </div>
+
+  </div>
+  <!--
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  -->
+</body>
+</html>
